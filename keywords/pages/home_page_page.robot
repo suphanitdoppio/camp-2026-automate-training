@@ -5,7 +5,7 @@ Get cookie policy link value
     ${link_url}    SeleniumLibrary.Get element attribute    ${cookie_popup_locator}[txt_cookie_policy]    ${href}
     RETURN        ${link_url}
 
- Verify attribute value is correct
+ Verify attribute value is equal to cookie policy link
     [Arguments]    ${link_url}
     BuiltIn.Should Be Equal    ${link_url}    ${cookie_policy}
 

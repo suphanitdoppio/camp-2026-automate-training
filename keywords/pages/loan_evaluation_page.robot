@@ -1,21 +1,18 @@
 *** Keywords ***
-Click career selector button
+Select career
+    [Arguments]    ${opt_career}
     common.Click element when ready    ${loan_evaluation_locator}[ddl_career_selector]
+    common.Click element when ready    ${opt_career}
 
-Click fulltime staff value
-    common.Click element when ready    ${loan_evaluation_locator}[opt_fulltime_staff]
-
-Click result selector button
+Select result
+    [Arguments]    ${result}
     common.Click element when ready    ${loan_evaluation_locator}[ddl_result_selector_button]
+    common.Click element when ready    ${result}
 
-Click type2 value
-    common.Click element when ready    ${loan_evaluation_locator}[opt_type2]
-
-Click loan type selector button
+Select loan type
+    [Arguments]    ${loan_type}
     common.Click element when ready    ${loan_evaluation_locator}[ddl_loan_type]
-
-Click speedy loan value
-    common.Click element when ready    ${loan_evaluation_locator}[opt_speedy_loan]
+    common.Click element when ready    ${loan_type}
 
 Delete salary default data
     SeleniumLibrary.Press Keys    ${loan_evaluation_locator}[txt_salary_box]    ${cmd_a}   ${back_space}
@@ -34,8 +31,7 @@ Input credit line amount
 Wait until error msg visible
     SeleniumLibrary.Wait Until Element Is Visible    ${loan_evaluation_locator}[txt_credit_exceed_msg]
 
-Error Message Display
-    SeleniumLibrary.Wait Until Element Is Visible    ${loan_evaluation_locator}[txt_credit_exceed_msg]    
-
-Scroll down to credit error msg
-    SeleniumLibrary.Scroll Element Into View    ${loan_evaluation_locator}[txt_credit_exceed_msg]
+Verify expected error msg
+    [Arguments]    ${error_msg} 
+    SeleniumLibrary.Wait Until Element Is Visible    ${loan_evaluation_locator}[txt_credit_exceed_msg]
+    SeleniumLibrary.Scroll Element Into View    ${loan_evaluation_locator}[txt_credit_exceed_msg]    

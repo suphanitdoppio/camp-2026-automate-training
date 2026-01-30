@@ -1,5 +1,4 @@
 *** Variables ***
-
 # url
 ${home_page}    https://www.cardx.co.th/
 ${cookie_policy}    https://www.cardx.co.th/cookies-policy
@@ -15,3 +14,7 @@ ${timeout_10s}    10s
 
 # attribute
 ${href}    href
+
+# Keyboard
+cmd_a: "COMMAND+a"
+back_space: "BACKSPACE"

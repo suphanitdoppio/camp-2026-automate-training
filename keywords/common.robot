@@ -3,7 +3,6 @@ This is test setup
     SeleniumLibrary.Open browser    ${home_page}    ${browser}
 
 This is test teardown
-    BuiltIn.Sleep    ${timeout_3s}
     SeleniumLibrary.Close browser
 
 Click element when ready            

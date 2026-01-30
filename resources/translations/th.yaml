@@ -1,0 +1,8 @@
+loan_evaluation_page:
+  btn_loan_evaluation: "สมัครสินเชื่อ"
+  ddl_career_selector: "กรุณาเลือกอาชีพของคุณ"
+  opt_fulltime_staff: "fullTimeStaff"
+  ddl_result_selector_button: "กรุณาเลือกประเภทผลลัพท์ที่คุณต้องการ"
+  ddl_loan_type: "กรุณาเลือกประเภทสินเชื่อที่คุณสนใจ"
+  txt_salary_box: "รายได้ต่อเดือน"
+  txt_credit_exceed_msg: "วงเงินทั้งหมดจะต้องไม่เกิน 3 เท่า"
