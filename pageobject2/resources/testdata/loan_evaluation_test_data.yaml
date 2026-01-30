@@ -1,0 +1,8 @@
+# Loan Evaluate
+salary: "25000" 
+credit: "50000"  
+credit_error_msg: "วงเงินทั้งหมดจะต้องไม่เกิน 3 เท่า"
+
+# Keyboard
+cmd_a: "COMMAND+a"
+back_space: "BACKSPACE"
