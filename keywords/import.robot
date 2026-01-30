@@ -18,4 +18,3 @@ Resource    ${CURDIR}/common.robot
 Resource    ${CURDIR}/../resources/locators/home_locator.robot
 Resource    ${CURDIR}/../resources/locators/loan_evaluation_locator.robot
 Resource    ${CURDIR}/../resources/settings/setting.robot
-
