@@ -1,8 +1,8 @@
 *** Keywords ***
-This is test setup
+Open cardx website
     SeleniumLibrary.Open browser    ${home_page}    ${browser}
 
-This is test teardown
+Close cardx website
     SeleniumLibrary.Close browser
 
 Click element when ready            
@@ -11,7 +11,7 @@ Click element when ready
     SeleniumLibrary.Click element    ${locator} 
 
 Scroll down and click when ready
-    [Arguments]    ${locator}    ${timeout}=${timeout_5s}
+    [Arguments]    ${locator}    ${timeout}=${timeout_10s}
     SeleniumLibrary.Wait until element is visible    ${locator}    ${timeout}
     SeleniumLibrary.Scroll Element Into View    ${locator}   
     SeleniumLibrary.Click element    ${locator}   

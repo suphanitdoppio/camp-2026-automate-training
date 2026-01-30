@@ -1,5 +1,5 @@
 loan_evaluation_page:
-  btn_loan_evaluation: "สมัครสินเชื่อ"
+  btn_loan_evaluation: "คำนวณสินเชื่อ"
   ddl_career_selector: "กรุณาเลือกอาชีพของคุณ"
   opt_fulltime_staff: "fullTimeStaff"
   ddl_result_selector_button: "กรุณาเลือกประเภทผลลัพท์ที่คุณต้องการ"

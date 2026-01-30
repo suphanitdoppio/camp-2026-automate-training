@@ -16,5 +16,5 @@ ${timeout_10s}    10s
 ${href}    href
 
 # Keyboard
-cmd_a: "COMMAND+a"
-back_space: "BACKSPACE"
+${cmd_a}    COMMAND+a
+${back_space}    BACKSPACE

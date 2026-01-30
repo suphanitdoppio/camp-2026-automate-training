@@ -1,7 +1,7 @@
 *** Settings ***
 Resource          ${CURDIR}/../keywords/import.robot
-Test Setup        common.This is test setup
-Test Teardown     common.This is test teardown
+Test Setup        common.Open cardx website
+Test Teardown     common.Close cardx website
 *** Test Cases ***
 TC-001 - Open web, verify cookie link and click accept button
     [Tags]    TC001
